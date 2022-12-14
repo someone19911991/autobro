@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Autobro</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Autobro</h1>
+
+    <div class="auction-container">
+        <div class="select-container">
+            <select class="auction" name="auction">
+                <option value=""></option>
+                <option value="copart">Copart</option>
+                <option value="iaai">IAAI</option>
+            </select>
+        </div>
+        <div class="copart-select-container select-container">
+            <select class="copart-select-from">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="iaai-select-container select-container">
+            <select class="iaai-select-from select-container">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+
+    <div class="results-labels">
+        <span>Auction</span>
+        <span>From</span>
+        <span>To</span>
+        <span>Price</span>
+    </div>
+    <div class="results"></div>
+    <div class="results-small">
+        <div class="auction-small">
+            <span>Auction</span>
+            <span></span>
+        </div>
+        <div class="from-small">
+            <span>From</span>
+            <span></span>
+        </div>
+        <div class="to-small">
+            <span>To</span>
+            <span></span>
+        </div>
+        <div class="price-small">
+            <span>Price</span>
+            <span></span>
+        </div>
+    </div>
+
+    <script src="data2.js"></script>
+    <script src="main.js"></script>
+</div>
+</body>
+</html>
